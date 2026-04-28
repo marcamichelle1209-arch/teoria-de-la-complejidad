@@ -24,11 +24,11 @@ Se usa para comparar algoritmos y elegir el mejor.
 4. Cerrar el pan 
 
  Eso ya es un algoritmo. 
---------------------------------
+
 ### Importancia:  
 
 Permite resolver problemas de forma clara y organizada es la base de la programación, la cual tambien ayuda a automatizar tareas, haciendo posible que las computadoras funcionen correctamente 
- ------------------------------------------------------
+ 
 ## 3.¿Qué significa que un algoritmo sea eficiente? 
 
   Un algoritmo es eficiente cuando logra resolver un problema: 
@@ -214,4 +214,60 @@ La complejidad cuadrática ocurre cuando hay dos bucles anidados, cada uno depen
 ## Salida de Consola:
 ![alt text](assets/complecuadratica.png)
 
-# Conclusiones:
+
+
+# Conclusiones — Práctica 4.1: Teoría de la Complejidad
+
+
+---
+
+
+### 1. ¿Qué complejidad es más costosa y por qué?
+
+La complejidad más costosa es **O(n!)** — factorial — seguida de **O(2ⁿ)** — exponencial. Al implementar y analizar los ejemplos en Java, comprendimos por qué estas notaciones son prácticamente inviables: con apenas 20 elementos de entrada, O(n!) supera los 2,400 billones de operaciones, un número que ningún procesador actual puede manejar en tiempo razonable.
+
+Lo que el código nos dejó muy claro es la escala comparativa:
+
+```
+O(1) → O(log n) → O(n) → O(n log n) → O(n²) → O(2ⁿ) → O(n!)
+ más eficiente ————————————————————————————————> más costosa
+```
+
+Incluso O(n²), que parece moderada, se vuelve problemática rápidamente: con 1,000 elementos realiza 1,000,000 de operaciones, mientras que O(n) con los mismos datos solo realiza 1,000. La diferencia es visible directamente en el código al comparar `ComplejidadLineal.java` con `ComplejidadCuadratica.java`.
+
+---
+
+### 2. ¿Qué aprendieron del análisis?
+
+El desarrollo del proyecto nos enseñó que **analizar un algoritmo va mucho más allá de verificar que funcione correctamente**. Un programa puede entregar el resultado esperado y al mismo tiempo ser completamente ineficiente para datos del mundo real.
+
+Aprendimos a distinguir dos dimensiones clave de la eficiencia:
+
+- **Coste temporal**: cuántas operaciones ejecuta el algoritmo en función del tamaño de entrada.
+- **Coste espacial**: cuánta memoria consume durante su ejecución.
+
+También aprendimos que existen tres escenarios de análisis —mejor caso, peor caso y caso promedio— y que Big O siempre describe el peor escenario, lo cual es lo más útil al diseñar software real, porque nos prepara para las condiciones más exigentes.
+
+Finalmente, la diferencia entre **análisis teórico** y **análisis experimental** quedó muy clara al escribir el código: teóricamente sabemos que un bucle anidado es O(n²), pero al medirlo con `System.currentTimeMillis()` pudimos ver ese crecimiento reflejado en números reales.
+
+---
+
+### 3. ¿Qué les sorprendió más al ver el código?
+
+Lo que más nos sorprendió fue **lo inocente que puede verse un código costoso**. Al escribir `ComplejidadCuadratica.java`, el código con dos bucles anidados ocupa apenas unas pocas líneas y parece simple, pero su impacto en rendimiento con datos grandes es enorme.
+
+También nos sorprendió la eficiencia de la búsqueda binaria — O(log n) —: mientras que recorrer una lista de un millón de elementos uno por uno requiere un millón de pasos, la búsqueda binaria necesita aproximadamente solo 20. Ver eso implementado en `ComplejidadLogaritmica.java` hace que el concepto deje de ser abstracto y se vuelva completamente concreto.
+
+Otro punto que llamó nuestra atención fue que **el mismo algoritmo puede tener distintos casos de complejidad según los datos de entrada**, algo que solo queda claro cuando se experimenta directamente con código.
+
+---
+
+### 4. Reflexión final del grupo
+
+Esta práctica nos demostró que la Teoría de la Complejidad no es un tema exclusivamente académico: es una herramienta de toma de decisiones que todo desarrollador necesita. Al crear cada clase Java y justificar su complejidad, pasamos de memorizar definiciones a realmente entender por qué un algoritmo se comporta de cierta manera.
+
+El ejercicio de documentar cada clase en el README también nos exigió un nivel de comprensión más profundo, porque no bastaba con que el código funcionara — teníamos que ser capaces de explicar **por qué** ese código era O(n), O(n²) o O(log n). Esa conexión entre teoría y práctica es, creemos, el aprendizaje más valioso de esta práctica.
+
+Como conclusión general: **un buen programador no solo escribe código que funciona, sino código que escala**.
+
+---

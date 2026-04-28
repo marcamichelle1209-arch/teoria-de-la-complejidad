@@ -1,4 +1,4 @@
-![alt text](assets/image.png)
+![alt text](image.png)
 
 ### Integrantes:
 
@@ -138,19 +138,81 @@ Es el comportamiento esperado en condiciones normales, promediando todos los pos
 ### `Ejemplo:`
  Buscar un número que en promedio está a la mitad de la lista → O(n/2) que simplificamos como O(n)
 - Cada una de las notaciones O(n), O (log n), etc:
-### 1- Constante - O(1): 
+### 1. Constante - O(1): 
 Sin importar si el arreglo tiene 10 o 10 millones de elementos, 
     el algoritmo siempre ejecuta exactamente la misma cantidad de operaciones. No hay bucles, no hay recorridos, es acceso directo.
-### 2.Lineal - O(n): 
+### 2. Lineal - O(n): 
 El algoritmo divide el problema a la mitad en cada paso. Esto significa que, aunque los datos crezcan exponencialmente, el trabajo crece muy poco. Si se tiene 1,000 elementos se necesita uno 10 pasos; si tiene 1,000,000 elementos necesitan solo 20 pasos.
-### 3.Logarítmica - O (n log n):
+### 3. Logarítmica - O (n log n):
  El número de operaciones crece exactamente igual que los datos. Si duplica los datos, el tiempo se duplica. Si tiene 100 elementos hace 100 operaciones; con 1,000 hace 1,000.
-### 4.Cuadrática - O(n^2): 
+### 4. Cuadrática - O(n^2): 
 Generalmente aparece cuando tiene un bucle dentro de otro bucle, y cada uno recorre los n datos. Si duplica los datos, el tiempo se cuadruplica. Con 10 elementos son 100 operaciones; con 100 elementos son 10,000.
-### 5.Exponencial - O(2^n): 
+### 5. Exponencial - O(2^n): 
 Cada elemento nuevo duplica el número de operaciones. Para n=10 son 1,024 operaciones. Para n=50 son más de 1,000 billones. Completamente impráctico para valores medianos de n.
-### 6.Factorial - O(n!): 
+### 6. Factorial - O(n!): 
 El peor crecimiento posible. Para n = 10 son 3,628,800 operaciones; para n = 20 son más de 2,400 billones. En la práctica, este tipo de algoritmos solo son viables para entradas de tamaño n menor a 12 o 15.
 
 ------------------------------------
 
+## Complejidad O(1) -Constante
+
+### Nombre del archivo: ComplejidadConstante.java
+
+La complejidad constante significa que el algoritmo realiza siempre el mismo número fijo de operaciones, sin importar cuán grande sea la entrada. No existe ningún bucle ni recursión que dependa de n.
+
+## Codigo:
+![alt text](image-1.png)
+
+## Salida de Consola:
+![alt text](<assets/Captura de pantalla 2026-04-27 231900.png>)
+
+## Complejidad O(log n) -Logaritmica
+
+### Nombre del archivo: ComplejidadLogaritmica.java
+
+La complejidad logarítmica ocurre cuando el tamaño del problema se divide a la mitad en cada paso. Crece muy lentamente: con n = 1.000.000 solo se necesitan aproximadamente 20 pasos.
+
+## Codigo:
+![alt text](<assets/Captura de pantalla 2026-04-27 233159.png>)
+
+## Salida de Consola:
+![alt text](image.png)
+
+## Complejidad O(n) -Lineal
+
+### Nombre del archivo: ComplejidadLineal.java
+
+La complejidad lineal ocurre cuando el número de operaciones crece de forma proporcional al tamaño de la entrada. Si n se duplica, el tiempo también se duplica.
+
+## Codigo:
+![alt text](<assets/Captura de pantalla 2026-04-27 231447.png>)
+
+## Salida de Consola:
+
+![alt text](<assets/Captura de pantalla 2026-04-27 232016.png>)
+
+## Complejidad O(n log n) --Lineal-Logaritmica
+
+### Nombre del archivo: ComplejidadNlogN.java
+Combina un recorrido lineal con una operación logarítmica dentro de él. Es la complejidad de los algoritmos de ordenamiento más eficientes como Merge Sort y Quick Sort.
+
+## Codigo:
+![alt text](<assets/Captura de pantalla 2026-04-27 233159.png>)
+
+## Salida de Consola:
+![alt text](<assets/Captura de pantalla 2026-04-27 232136.png>)
+
+
+## Complejidad O(n²) -- Cuadrática
+
+### Nombre del archivo: ComplejidadCuadratica.java
+
+La complejidad cuadrática ocurre cuando hay dos bucles anidados, cada uno dependiente de n. El tiempo crece de forma cuadrática: si n se duplica, el tiempo se cuadruplica.
+
+## Codigo:
+![alt text](image-2.png)
+
+## Salida de Consola:
+![alt text](<assets/Captura de pantalla 2026-04-27 232123.png>)
+
+# Conclusiones:

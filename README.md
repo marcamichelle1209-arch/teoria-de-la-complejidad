@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](assets/imagenmi.png)
 
 ### Integrantes:
 
@@ -154,65 +154,64 @@ El peor crecimiento posible. Para n = 10 son 3,628,800 operaciones; para n = 20 
 
 ------------------------------------
 
-## Complejidad O(1) -Constante
+
+# Complejidad O(1) - Constante
 
 ### Nombre del archivo: ComplejidadConstante.java
 
 La complejidad constante significa que el algoritmo realiza siempre el mismo número fijo de operaciones, sin importar cuán grande sea la entrada. No existe ningún bucle ni recursión que dependa de n.
 
 ## Codigo:
-![alt text](image-1.png)
+![alt text](assets/constante.png)
 
 ## Salida de Consola:
-![alt text](<assets/Captura de pantalla 2026-04-27 231900.png>)
+![alt text](assets/ejemconstante.png)
 
-## Complejidad O(log n) -Logaritmica
+# Complejidad O(log n) -Logaritmica
 
 ### Nombre del archivo: ComplejidadLogaritmica.java
 
 La complejidad logarítmica ocurre cuando el tamaño del problema se divide a la mitad en cada paso. Crece muy lentamente: con n = 1.000.000 solo se necesitan aproximadamente 20 pasos.
 
 ## Codigo:
-![alt text](<assets/Captura de pantalla 2026-04-27 233159.png>)
-
+![alt text](assets/logaritmica.png)
 ## Salida de Consola:
-![alt text](image.png)
+![alt text](assets/ejemloga.png)
 
-## Complejidad O(n) -Lineal
+# Complejidad O(n) -Lineal
 
 ### Nombre del archivo: ComplejidadLineal.java
 
 La complejidad lineal ocurre cuando el número de operaciones crece de forma proporcional al tamaño de la entrada. Si n se duplica, el tiempo también se duplica.
 
 ## Codigo:
-![alt text](<assets/Captura de pantalla 2026-04-27 231447.png>)
+![alt text](assets/Lineal.png)
 
 ## Salida de Consola:
 
-![alt text](<assets/Captura de pantalla 2026-04-27 232016.png>)
+![alt text](assets/ejemploLineal.png)
 
-## Complejidad O(n log n) --Lineal-Logaritmica
+# Complejidad O(n log n) --Lineal-Logaritmica
 
 ### Nombre del archivo: ComplejidadNlogN.java
 Combina un recorrido lineal con una operación logarítmica dentro de él. Es la complejidad de los algoritmos de ordenamiento más eficientes como Merge Sort y Quick Sort.
 
 ## Codigo:
-![alt text](<assets/Captura de pantalla 2026-04-27 233159.png>)
-
+![alt text](assets/compleNlogn.png)
 ## Salida de Consola:
-![alt text](<assets/Captura de pantalla 2026-04-27 232136.png>)
+![alt text](assets/ejemploNyN.png)
 
 
-## Complejidad O(n²) -- Cuadrática
+# Complejidad O(n²) -- Cuadrática
 
 ### Nombre del archivo: ComplejidadCuadratica.java
 
 La complejidad cuadrática ocurre cuando hay dos bucles anidados, cada uno dependiente de n. El tiempo crece de forma cuadrática: si n se duplica, el tiempo se cuadruplica.
 
 ## Codigo:
-![alt text](image-2.png)
+![alt text](assets/Cuadratica.png)
 
 ## Salida de Consola:
-![alt text](<assets/Captura de pantalla 2026-04-27 232123.png>)
+![alt text](assets/complecuadratica.png)
 
 # Conclusiones:

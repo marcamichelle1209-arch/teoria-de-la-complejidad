@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ### Integrantes:
 
@@ -7,10 +7,11 @@
 
 # `Teoria de la Complejidad`
 ## 1. Teoría de la Complejidad – ¿Qué es?
-   La teoría de la complejidad estudia qué tan eficiente es un algoritmo en términos de: 
-   ● Tiempo 
-   ● Memoria 
-   Se usa para comparar algoritmos y elegir el mejor.
+La teoría de la complejidad estudia qué tan eficiente es un algoritmo en términos de: 
+- Tiempo 
+- Memoria 
+
+Se usa para comparar algoritmos y elegir el mejor.
 
 ## 2. `¿Qué es un algoritmo y por qué es importante? `
 
@@ -21,8 +22,11 @@
 2. Poner jamón 
 3. Poner queso 
 4. Cerrar el pan 
-Eso ya es un algoritmo. 
+
+ Eso ya es un algoritmo. 
+--------------------------------
 ### Importancia:  
+
 Permite resolver problemas de forma clara y organizada es la base de la programación, la cual tambien ayuda a automatizar tareas, haciendo posible que las computadoras funcionen correctamente 
  ------------------------------------------------------
 ## 3.¿Qué significa que un algoritmo sea eficiente? 
